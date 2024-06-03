@@ -1,0 +1,153 @@
+
+@font-face{
+  font-family:'digital-clock-font';
+  src: url('./assets/DS-DIGIB.TTF');
+ }
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  color: #212529;
+  background-color: #F6F8FA;
+  font-family: "Kanit", sans-serif;
+  /* box-shadow: inset 0 0 2rem rgba(0, 0, 0, .5); */
+}
+
+.cover-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: #444444;
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(0, 0, 0, .25);
+}
+
+.nav-masthead .nav-link+.nav-link {
+  margin-left: 1rem;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+
+  .nav-masthead {
+    float: right;
+  }
+}
+
+.cover {
+  padding: 0 1.5rem;
+}
+
+#background {
+  position: fixed;
+  z-index: -1;
+}
+
+.main-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+
+.header__logo{
+  width: 65px;
+  fill: black;
+  margin-top: 5%;
+}
+
+.countdown{
+  display: flex;
+  align-items: center; 
+  gap: 30px;
+  font-family:'digital-clock-font';
+  font-size: 25px;
+}
+
+.textColor{
+  color: #261C21;
+}
+
+#para{
+  width: 450px;
+  text-align: center;
+}
+
+#companyName{
+  font-weight: 600;
+  color:#F3F3F3;
+}
+
+.countdownBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#navbar{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  background-color: #606060;
+  box-shadow: 0 0 40px rgba(68, 68, 68, 0.75);
+}
+
+
+@media screen and (max-width: 1536px) {
+  .header__logo{
+    margin-top: 3%;
+  }
+}
+
+@media (max-width:500px){
+  #para{
+    width: 350px;
+  }
+}
+
+@media (max-width: 375px){
+  #para{
+    width: 300px;
+  }
+
+  .countdown{
+    font-size: 20px;
+  }
+}
